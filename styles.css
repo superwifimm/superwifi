@@ -19,6 +19,25 @@ body {
     position: relative;
     margin-bottom: 15px;
 }
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: linear-gradient(to left, rgb(77, 20, 140) , rgb(236, 118, 7));
+}
+.hero::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: linear-gradient(to right, rgb(77, 20, 140) , rgb(236, 118, 7));
+}
 .hero h1 {
     font-weight: normal;
     font-size: 3rem;
